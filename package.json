@@ -5,7 +5,7 @@
   "description": "a template for npm library developer",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/aShu-guo/npm-dev-template",
+  "homepage": "https://github.com/aShu-guo/npm-dev-template#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aShu-guo/npm-dev-template.git"
@@ -19,13 +19,13 @@
   ],
   "style": "./dist/main.css",
   "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.es.js",
-  "unpkg": "./dist/my-lib.umd.js",
+  "module": "./dist/my-lib.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
+      "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "files": [
     "dist",

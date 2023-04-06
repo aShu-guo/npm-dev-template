@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
 
-console.log(resolve('src/index.js'));
 // https://vitejs.dev/coindexnfig/
 export default defineConfig(() => {
   return {
@@ -12,7 +11,7 @@ export default defineConfig(() => {
     build: {
       minify: true,
       lib: {
-        entry: resolve('src/entry.js'),
+        entry: resolve('src/main.js'),
         name: 'MyLib',
         fileName: 'my-lib',
       },
